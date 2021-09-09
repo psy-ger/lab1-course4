@@ -7,7 +7,6 @@ public static class Test
     {
         Console.WriteLine("Hello");
         Console.WriteLine("Word");
-        Console.WriteLine("123");
-
+        Console.WriteLine("12");
     }
 }
