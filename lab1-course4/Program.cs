@@ -4,16 +4,11 @@ public class Program
 	{
 		public static void Main()
 		{
-			int thousands = 1;
-			int number = Convert.ToInt32(Console.ReadLine());
-			if (number > 1000)
-			{
-				thousands = (number / 1000) * 10;
-			}
-			int hundreds = (number % 1000) / 100;
-			int sum = thousands + hundreds;
+			public int thousands = 1;
+			public int number = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine(sum);
 
 		}
 	}
 
+  
