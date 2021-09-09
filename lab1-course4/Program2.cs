@@ -8,13 +8,7 @@ using static Program;
 namespace lab1_course4
 {
     class Program2
-	{
-
-    if (number > 1000)
-			{
-				thousands = (number / 1000) * 10;
-			}
-	int hundreds = (number % 1000) / 100;
-	int sum = thousands + hundreds;
+    {
+    }
 }
 
