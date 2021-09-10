@@ -9,9 +9,9 @@ namespace lab_1_File_1
         static void Main(string[] args)
         {
 
-            Program2 blabla = new Program2();
-            Console.Write(blabla.Raschet());
-            Console.Write(blabla.MyClass()); 
+            Program2 classcall = new Program2();
+            Console.Write(classcall.Raschet());
+            Console.Write(classcall.MyClass()); 
 
             
             Console.ReadLine();
