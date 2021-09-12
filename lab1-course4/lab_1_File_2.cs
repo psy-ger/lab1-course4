@@ -10,8 +10,19 @@ namespace lab_1_File_1
         {
 
             Program2 classcall = new Program2();
-            Console.Write(classcall.Raschet());
-            Console.Write(classcall.MyClass()); 
+            Console.Write(classcall.Input());
+            Console.Write(classcall.Examination());
+            Console.WriteLine("\n");
+
+            if(classcall.Examination() == Convert.ToString(1))
+            {
+               Console.Write(classcall.Calculation());
+                Console.Write(classcall.MyClass());
+            }
+            else
+            {
+                Console.WriteLine("Число не целое");
+            } 
 
             
             Console.ReadLine();
