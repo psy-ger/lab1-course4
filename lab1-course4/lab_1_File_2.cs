@@ -10,7 +10,12 @@ namespace lab_1_File_1
         {
 
             Program2 classcall = new Program2();
+
+
             Console.Write(classcall.Raschet());
+
+
+
             Console.Write(classcall.MyClass()); 
 
             
