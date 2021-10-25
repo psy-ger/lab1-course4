@@ -7,38 +7,34 @@ namespace lab_1_File_2
         public int number;
         public int thousands;
         public int answer;
-        
+
         public string Input()
-        {  
-            number = Convert.ToInt32(Console.ReadLine());
+        {
+            number = Convert.ToInt32(Console.ReadLine()); // ввод целого числа 
             return "";
         }
         public string Examination()
         {
-            if (Convert.ToInt32(number) == Convert.ToDouble(number))
+            if (Convert.ToInt32(number) == Convert.ToDouble(number)) // проверка на целостность числа
             {
-                answer = 1;
+                answer = 1; // целое
             }
             else
             {
-                answer = 0;
+                answer = 0; // не целое
             }
-            string answer_con = Convert.ToString(answer);
+            string answer_con = Convert.ToString(answer); // конвертирования числа в строку
             return answer_con;
         }
 
-            int thousands = 1;
-            int number = Convert.ToInt32(Console.ReadLine());
-            if (number > 1000)
+        public string Calculation()
+        {
+            if (number > 999) // целое число больше 999
             {
-                thousands = (number / 1000) * 10;
-            }else
-            {
-               thousands = 0;
-
+                thousands = (number / 1000) * 10; // количество тысяч если такое является
             }
-            int hundreds = (number % 1000) / 100;
-            sum = thousands + hundreds;
+            int hundreds = (number % 1000) / 100; // количество сотен в числе
+            sum = thousands + hundreds; // сколько всего стотен в числе
             return "";
         }
 
@@ -47,7 +43,7 @@ namespace lab_1_File_2
         public string MyClass()
         {
             j = sum;
-            string str = Convert.ToString(j);
+            string str = Convert.ToString(j); // перевод числа в строку
             return str;
         }
 
